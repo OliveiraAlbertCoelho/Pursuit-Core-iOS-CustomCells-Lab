@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		507FAC4E234D19F3009125F5 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507FAC4D234D19F3009125F5 /* UserTableViewCell.swift */; };
+		507FAC50234D1B6C009125F5 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507FAC4F234D1B6C009125F5 /* UserModel.swift */; };
+		507FAC52234D25B9009125F5 /* UserDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507FAC51234D25B9009125F5 /* UserDetailViewController.swift */; };
 		CDA0F5CE2348F74900B2E7F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA0F5CD2348F74900B2E7F0 /* AppDelegate.swift */; };
 		CDA0F5D02348F74900B2E7F0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA0F5CF2348F74900B2E7F0 /* SceneDelegate.swift */; };
 		CDA0F5D22348F74900B2E7F0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA0F5D12348F74900B2E7F0 /* ViewController.swift */; };
@@ -32,6 +35,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		507FAC4D234D19F3009125F5 /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
+		507FAC4F234D1B6C009125F5 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		507FAC51234D25B9009125F5 /* UserDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailViewController.swift; sourceTree = "<group>"; };
 		CDA0F5CA2348F74900B2E7F0 /* ProgrammaticUserCells.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProgrammaticUserCells.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDA0F5CD2348F74900B2E7F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CDA0F5CF2348F74900B2E7F0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -67,6 +73,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		507FAC4A234D19B0009125F5 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				CDA0F5D12348F74900B2E7F0 /* ViewController.swift */,
+				507FAC51234D25B9009125F5 /* UserDetailViewController.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		507FAC4B234D19BC009125F5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				507FAC4F234D1B6C009125F5 /* UserModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		507FAC4C234D19C6009125F5 /* CustomCell */ = {
+			isa = PBXGroup;
+			children = (
+				507FAC4D234D19F3009125F5 /* UserTableViewCell.swift */,
+			);
+			path = CustomCell;
+			sourceTree = "<group>";
+		};
 		CDA0F5C12348F74900B2E7F0 = {
 			isa = PBXGroup;
 			children = (
@@ -89,10 +120,12 @@
 		CDA0F5CC2348F74900B2E7F0 /* ProgrammaticUserCells */ = {
 			isa = PBXGroup;
 			children = (
+				507FAC4C234D19C6009125F5 /* CustomCell */,
+				507FAC4B234D19BC009125F5 /* Model */,
+				507FAC4A234D19B0009125F5 /* VC */,
 				CDA0F5FA2349003E00B2E7F0 /* Networking */,
 				CDA0F5CD2348F74900B2E7F0 /* AppDelegate.swift */,
 				CDA0F5CF2348F74900B2E7F0 /* SceneDelegate.swift */,
-				CDA0F5D12348F74900B2E7F0 /* ViewController.swift */,
 				CDA0F5EF2348F7E300B2E7F0 /* User.swift */,
 				CDA0F5D62348F74F00B2E7F0 /* Assets.xcassets */,
 				CDA0F5D82348F74F00B2E7F0 /* LaunchScreen.storyboard */,
@@ -226,8 +259,11 @@
 				CDA0F5D22348F74900B2E7F0 /* ViewController.swift in Sources */,
 				CDA0F5F52348FE8800B2E7F0 /* AppError.swift in Sources */,
 				CDA0F5CE2348F74900B2E7F0 /* AppDelegate.swift in Sources */,
+				507FAC4E234D19F3009125F5 /* UserTableViewCell.swift in Sources */,
 				CDA0F5F92348FEB800B2E7F0 /* UsersFetchingService.swift in Sources */,
+				507FAC52234D25B9009125F5 /* UserDetailViewController.swift in Sources */,
 				CDA0F5F72348FE9600B2E7F0 /* NetworkHelper.swift in Sources */,
+				507FAC50234D1B6C009125F5 /* UserModel.swift in Sources */,
 				CDA0F5D02348F74900B2E7F0 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
